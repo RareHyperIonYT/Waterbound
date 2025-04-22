@@ -3,7 +3,8 @@
 	"package": "me.rarehyperion.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "LivingEntityMixin"
+		"BucketItemMixin",
+		"LivingEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
