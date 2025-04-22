@@ -8,6 +8,8 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -24,7 +26,13 @@ public class LivingEntityMixin {
 	)
 	private boolean invertDrowning(final LivingEntity self, final TagKey<Fluid> tag) {
 		if (self instanceof PlayerEntity && tag == FluidTags.WATER) {
-			return !self.isSubmergedIn(tag);
+			final World world = self.getWorld();
+			final BlockPos position = self.getBlockPos();
+
+			boolean isSubmerged = self.isSubmergedIn(tag);
+			boolean isRaining = world.isRaining() && world.isSkyVisible(position) && world.getBiome(position).value().hasPrecipitation();
+
+			return !(isSubmerged || isRaining);
 		}
 
 		return self.isSubmergedIn(tag);
