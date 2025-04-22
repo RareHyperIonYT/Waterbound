@@ -9,10 +9,13 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(BucketItem.class)
 public class BucketItemMixin {
 
-    @Redirect(method = "placeFluid", at = @At(
-            value = "INVOKE",
-            target = "Lnet/minecraft/world/dimension/DimensionType;ultrawarm()Z"
-    ))
+    @Redirect(
+            method = "placeFluid",
+            at = @At(
+                value = "INVOKE",
+                target = "Lnet/minecraft/world/dimension/DimensionType;ultrawarm()Z"
+            )
+    )
     public boolean allowNetherPlacement(final DimensionType instance) {
         return false;
     }

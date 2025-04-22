@@ -2,7 +2,7 @@
 
 Waterbound is a tiny Fabric mod that flips breathing upside down:
 - 💧 Only breathe underwater
-- 🏜️ Choke on land or in bubble columns
+- 🏜️ Choke on land
 
 No mobs, items, or underwater structures get affected, this is strictly a player-only stunt!
 
