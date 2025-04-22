@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "waterbound",
+	"version": "${version}",
+	"name": "Waterbound",
+	"description": "Drown on land, breathe in water.",
+	"authors": [
+		"RareHyperIon"
+	],
+	"contact": {
+		"sources": "https://github.com/RareHyperIonYT/Waterbound"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/waterbound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.rarehyperion.Waterbound"
+		]
+	},
+	"mixins": [
+		"waterbound.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
