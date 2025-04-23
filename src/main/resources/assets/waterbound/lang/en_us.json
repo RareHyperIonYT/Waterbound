@@ -1,4 +1,8 @@
 {
   "generator.waterbound.submerged": "Submerged",
-  "generator.waterbound.submerged.info": "Makes the sea-level higher."
+  "generator.waterbound.submerged.info": "Makes the sea-level higher.",
+
+  "item.waterbound.glow_ink_torch": "Glow Ink Torch",
+
+  "itemGroup.waterbound.waterbound": "Waterbound"
 }

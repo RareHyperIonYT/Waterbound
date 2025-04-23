@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:torch",
+    "X": "minecraft:glow_ink_sac"
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "id": "waterbound:glow_ink_torch",
+    "count": 1
+  }
+}
