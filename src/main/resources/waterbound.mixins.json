@@ -1,12 +1,13 @@
 {
-	"required": true,
-	"package": "me.rarehyperion.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"BucketItemMixin",
-		"LivingEntityMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "me.rarehyperion.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BucketItemMixin",
+    "LivingEntityMixin",
+    "PlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
