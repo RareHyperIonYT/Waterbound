@@ -20,7 +20,7 @@ public class ModBlocks {
 
 
     public static void initialize() {
-        Waterbound.LOGGER.info("Registering {} items.", Waterbound.MOD_ID);
+        Waterbound.LOGGER.info("Registering {} blocks.", Waterbound.MOD_ID);
     }
 
     private static Block register(final String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
