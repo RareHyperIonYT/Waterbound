@@ -1,25 +1,19 @@
 package me.rarehyperion.mixin;
 
-import me.rarehyperion.Waterbound;
 import me.rarehyperion.items.ModItems;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.registry.tag.TagKey;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(PlayerEntity.class)
-public abstract class PlayerEntityMixin {
-
-    @Shadow public abstract void remove(final Entity.RemovalReason reason);
+public class PlayerEntityMixin {
 
     @Redirect(
             method = "getBlockBreakingSpeed",
