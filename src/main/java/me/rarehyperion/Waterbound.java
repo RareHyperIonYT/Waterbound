@@ -5,8 +5,6 @@ import me.rarehyperion.items.ModItems;
 import me.rarehyperion.registry.TooltipRegistry;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
-import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
