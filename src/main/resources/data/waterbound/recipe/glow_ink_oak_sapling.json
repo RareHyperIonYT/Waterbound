@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    ["minecraft:oak_sapling"],
+    ["minecraft:glow_ink_sac"]
+  ],
+  "result": {
+    "id": "waterbound:glow_ink_oak_sapling",
+    "count": 1
+  }
+}

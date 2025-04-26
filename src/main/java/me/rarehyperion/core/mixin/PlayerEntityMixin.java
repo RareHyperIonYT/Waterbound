@@ -1,7 +1,8 @@
-package me.rarehyperion.mixin;
+package me.rarehyperion.core.mixin;
 
-import me.rarehyperion.items.ModItems;
+import me.rarehyperion.core.ModItems;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.registry.tag.FluidTags;
@@ -45,7 +46,7 @@ public class PlayerEntityMixin {
         PlayerEntity self = (PlayerEntity)(Object)this;
 
         if(self.getEquippedStack(EquipmentSlot.FEET).getItem() == ModItems.FLIPPERS && self.isSwimming()) {
-            self.setVelocity(self.getVelocity().multiply(1.05, 1, 1.05)); // It's really weird using mixins for the functionality. Why did they remove ArmorItem?
+            if(!self.hasStatusEffect(StatusEffects.DOLPHINS_GRACE)) self.setVelocity(self.getVelocity().multiply(1.05, 1, 1.05)); // It's really weird using mixins for the functionality. Why did they remove ArmorItem?
             return 0.05F;
         }
 

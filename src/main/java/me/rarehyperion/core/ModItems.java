@@ -1,6 +1,7 @@
-package me.rarehyperion.items;
+package me.rarehyperion.core;
 
 import me.rarehyperion.Waterbound;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.VerticallyAttachableBlockItem;
@@ -14,8 +15,10 @@ import java.util.function.Function;
 
 public class ModItems {
 
-    public static Item GLOW_INK_TORCH = register("glow_ink_torch", settings -> new VerticallyAttachableBlockItem(ModBlocks.GLOW_INK_TORCH, ModBlocks.GLOW_INK_WALL_TORCH, Direction.DOWN, settings), new Item.Settings());
-    public static Item FLIPPERS = register("flippers", Item::new, new Item.Settings().armor(ModArmorMaterials.FLIPPER, EquipmentType.BOOTS));
+    public static final Item GLOW_INK_TORCH = register("glow_ink_torch", settings -> new VerticallyAttachableBlockItem(ModBlocks.GLOW_INK_TORCH, ModBlocks.GLOW_INK_WALL_TORCH, Direction.DOWN, settings), new Item.Settings());
+    public static final Item FLIPPERS = register("flippers", Item::new, new Item.Settings().armor(ModArmorMaterials.FLIPPER, EquipmentType.BOOTS));
+    public static final Item GLOW_INK_OAK_SAPLING = register("glow_ink_oak_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_OAK_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_SPRUCE_SAPLING = register("glow_ink_spruce_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_SPRUCE_SAPLING, settings), new Item.Settings());
 
     public static void initialize() {
         Waterbound.LOGGER.info("Registering {} items.", Waterbound.MOD_ID);

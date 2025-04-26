@@ -1,9 +1,10 @@
 package me.rarehyperion;
 
-import me.rarehyperion.items.ModBlocks;
-import me.rarehyperion.items.ModItems;
-import me.rarehyperion.items.ModArmorMaterials;
-import me.rarehyperion.registry.TooltipRegistry;
+import me.rarehyperion.core.ItemGroups;
+import me.rarehyperion.core.ModBlocks;
+import me.rarehyperion.core.ModItems;
+import me.rarehyperion.core.ModArmorMaterials;
+import me.rarehyperion.core.registry.TooltipRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

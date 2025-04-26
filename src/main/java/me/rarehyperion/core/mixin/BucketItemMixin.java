@@ -1,4 +1,4 @@
-package me.rarehyperion.mixin;
+package me.rarehyperion.core.mixin;
 
 import net.minecraft.item.BucketItem;
 import net.minecraft.world.dimension.DimensionType;

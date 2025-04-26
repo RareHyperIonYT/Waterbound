@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "me.rarehyperion.mixin",
+  "package": "me.rarehyperion.core.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BucketItemMixin",

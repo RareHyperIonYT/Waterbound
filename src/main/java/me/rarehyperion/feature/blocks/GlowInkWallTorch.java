@@ -1,4 +1,4 @@
-package me.rarehyperion.blocks;
+package me.rarehyperion.feature.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;

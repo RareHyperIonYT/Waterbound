@@ -14,9 +14,8 @@
 	"icon": "assets/waterbound/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"me.rarehyperion.Waterbound"
-		]
+		"main": ["me.rarehyperion.Waterbound"],
+		"client": ["me.rarehyperion.WaterboundClient"]
 	},
 	"mixins": [
 		"waterbound.mixins.json"

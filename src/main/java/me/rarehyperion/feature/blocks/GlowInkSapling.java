@@ -1,11 +1,13 @@
-package me.rarehyperion.blocks;
+package me.rarehyperion.feature.blocks;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.SaplingBlock;
+import net.minecraft.block.SaplingGenerator;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -17,13 +19,13 @@ import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 import org.jetbrains.annotations.Nullable;
 
-public class GlowInkTorch extends TorchBlock implements Waterloggable {
+public class GlowInkSapling extends SaplingBlock {
 
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
-    public GlowInkTorch(final SimpleParticleType particle, final Settings settings) {
-        super(particle, settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false));
+    public GlowInkSapling(final SaplingGenerator generator, final Settings settings) {
+        super(generator, settings);
+        this.setDefaultState(this.stateManager.getDefaultState().with(STAGE, 0).with(WATERLOGGED, false));
     }
 
     @Override
@@ -33,7 +35,7 @@ public class GlowInkTorch extends TorchBlock implements Waterloggable {
 
     @Override
     protected void appendProperties(final StateManager.Builder<Block, BlockState> builder) {
-        builder.add(WATERLOGGED);
+        builder.add(STAGE, WATERLOGGED);
     }
 
     @Override
@@ -48,15 +50,6 @@ public class GlowInkTorch extends TorchBlock implements Waterloggable {
         }
 
         return super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
-    }
-
-    @Override
-    public void randomDisplayTick(final BlockState state, final World world, final BlockPos pos, final Random random) {
-        double d = (double)pos.getX() + 0.5D;
-        double e = (double)pos.getY() + 0.7D;
-        double f = (double)pos.getZ() + 0.5D;
-        world.addParticleClient(ParticleTypes.UNDERWATER, d, e, f, 0.0D, 0.0D, 0.0D);
-        world.addParticleClient(ParticleTypes.GLOW, d, e, f, 0.0D, 0.0D, 0.0D);
     }
 
 }

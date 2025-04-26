@@ -1,4 +1,4 @@
-package me.rarehyperion.items;
+package me.rarehyperion.core;
 
 import me.rarehyperion.Waterbound;
 import net.minecraft.item.Item;
