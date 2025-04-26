@@ -4,6 +4,8 @@ import me.rarehyperion.Waterbound;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.VerticallyAttachableBlockItem;
+import net.minecraft.item.equipment.ArmorMaterials;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -14,6 +16,7 @@ import java.util.function.Function;
 public class ModItems {
 
     public static Item GLOW_INK_TORCH = register("glow_ink_torch", settings -> new VerticallyAttachableBlockItem(ModBlocks.GLOW_INK_TORCH, ModBlocks.GLOW_INK_WALL_TORCH, Direction.DOWN, settings), new Item.Settings());
+    public static Item FLIPPERS = register("flippers", Item::new, new Item.Settings().armor(ArmorMaterials.LEATHER, EquipmentType.BOOTS));
 
     public static void initialize() {
         Waterbound.LOGGER.info("Registering {} items.", Waterbound.MOD_ID);

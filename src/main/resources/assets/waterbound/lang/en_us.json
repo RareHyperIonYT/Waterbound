@@ -3,6 +3,8 @@
   "generator.waterbound.submerged.info": "Makes the sea-level higher.",
 
   "item.waterbound.glow_ink_torch": "Glow Ink Torch",
+  "item.waterbound.flippers": "Flippers",
+  "item.waterbound.flippers.tooltip": "Makes you swim faster!",
 
   "itemGroup.waterbound.waterbound": "Waterbound"
 }

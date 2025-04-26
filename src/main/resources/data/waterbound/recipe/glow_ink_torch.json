@@ -1,13 +1,9 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": "minecraft:torch",
-    "X": "minecraft:glow_ink_sac"
-  },
-  "pattern": [
-    "X",
-    "#"
+  "ingredients": [
+    ["minecraft:torch"],
+    ["minecraft:glow_ink_sac"]
   ],
   "result": {
     "id": "waterbound:glow_ink_torch",
