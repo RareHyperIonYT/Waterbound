@@ -16,6 +16,7 @@ public class ItemGroups {
             .displayName(Text.translatable("itemGroup.waterbound.waterbound"))
             .entries((context, entries) -> {
                 entries.add(ModItems.GLOW_INK_TORCH);
+                entries.add(ModItems.FLIPPERS);
             }).build();
 
     public static void initialize() {

@@ -2,6 +2,7 @@ package me.rarehyperion;
 
 import me.rarehyperion.items.ModBlocks;
 import me.rarehyperion.items.ModItems;
+import me.rarehyperion.items.ModArmorMaterials;
 import me.rarehyperion.registry.TooltipRegistry;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,6 +16,8 @@ public class Waterbound implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModArmorMaterials.initialize();
+
 		ModBlocks.initialize();
 		ModItems.initialize();
 		ItemGroups.initialize();
