@@ -42,7 +42,7 @@ public class PlayerEntityMixin {
             method = "tickMovement()V",
             constant = @Constant(floatValue = 0.0F, ordinal = 0)
     )
-    private float replaceZeroWithCustom(float original) {
+    private float changeStride(float original) {
         PlayerEntity self = (PlayerEntity)(Object)this;
 
         if(self.getEquippedStack(EquipmentSlot.FEET).getItem() == ModItems.FLIPPERS && self.isSwimming()) {
@@ -52,7 +52,5 @@ public class PlayerEntityMixin {
 
         return original;
     }
-
-
 
 }

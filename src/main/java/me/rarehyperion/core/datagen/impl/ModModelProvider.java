@@ -20,6 +20,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_OAK_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
         stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_SPRUCE_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_CHERRY_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_DARK_OAK_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_ACACIA_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_BIRCH_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_JUNGLE_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        stateGenerator.registerTintableCross(ModBlocks.GLOW_INK_PALE_OAK_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
     }
 
     @Override

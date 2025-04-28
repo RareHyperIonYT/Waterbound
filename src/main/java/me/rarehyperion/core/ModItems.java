@@ -19,6 +19,12 @@ public class ModItems {
     public static final Item FLIPPERS = register("flippers", Item::new, new Item.Settings().armor(ModArmorMaterials.FLIPPER, EquipmentType.BOOTS));
     public static final Item GLOW_INK_OAK_SAPLING = register("glow_ink_oak_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_OAK_SAPLING, settings), new Item.Settings());
     public static final Item GLOW_INK_SPRUCE_SAPLING = register("glow_ink_spruce_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_SPRUCE_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_CHERRY_SAPLING = register("glow_ink_cherry_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_CHERRY_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_DARK_OAK_SAPLING = register("glow_ink_dark_oak_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_DARK_OAK_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_ACACIA_SAPLING = register("glow_ink_acacia_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_ACACIA_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_BIRCH_SAPLING = register("glow_ink_birch_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_BIRCH_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_JUNGLE_SAPLING = register("glow_ink_jungle_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_JUNGLE_SAPLING, settings), new Item.Settings());
+    public static final Item GLOW_INK_PALE_OAK_SAPLING = register("glow_ink_pale_oak_sapling", settings -> new BlockItem(ModBlocks.GLOW_INK_PALE_OAK_SAPLING, settings), new Item.Settings());
 
     public static void initialize() {
         Waterbound.LOGGER.info("Registering {} items.", Waterbound.MOD_ID);

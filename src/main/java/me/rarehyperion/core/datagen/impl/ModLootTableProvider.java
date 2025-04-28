@@ -17,7 +17,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         this.addDrop(ModBlocks.GLOW_INK_TORCH);
         this.addDrop(ModBlocks.GLOW_INK_WALL_TORCH);
+
         this.addDrop(ModBlocks.GLOW_INK_OAK_SAPLING);
         this.addDrop(ModBlocks.GLOW_INK_SPRUCE_SAPLING);
+        this.addDrop(ModBlocks.GLOW_INK_CHERRY_SAPLING);
+        this.addDrop(ModBlocks.GLOW_INK_DARK_OAK_SAPLING);
+        this.addDrop(ModBlocks.GLOW_INK_ACACIA_SAPLING);
+        this.addDrop(ModBlocks.GLOW_INK_BIRCH_SAPLING);
+        this.addDrop(ModBlocks.GLOW_INK_JUNGLE_SAPLING);
+        this.addDrop(ModBlocks.GLOW_INK_PALE_OAK_SAPLING);
     }
 }

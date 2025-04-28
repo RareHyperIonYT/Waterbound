@@ -6,6 +6,12 @@
 
   "item.waterbound.glow_ink_oak_sapling": "Oak Sapling",
   "item.waterbound.glow_ink_spruce_sapling": "Spruce Sapling",
+  "item.waterbound.glow_ink_cherry_sapling": "Chery Sapling",
+  "item.waterbound.glow_ink_dark_oak_sapling": "Dark Oak Sapling",
+  "item.waterbound.glow_ink_acacia_sapling": "Acacia Sapling",
+  "item.waterbound.glow_ink_birch_sapling": "Birch Sapling",
+  "item.waterbound.glow_ink_jungle_sapling": "Jungle Sapling",
+  "item.waterbound.glow_ink_pale_oak_sapling": "Pale Oak Sapling",
 
   "item.waterbound.flippers": "Flippers",
   "item.waterbound.flippers.tooltip": "Makes you swim faster!",
