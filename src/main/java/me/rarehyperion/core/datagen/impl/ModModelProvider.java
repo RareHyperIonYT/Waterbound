@@ -24,7 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(final ItemModelGenerator modelGenerator) {
-        modelGenerator.register(ModItems.FLIPPERS, Models.GENERATED);
+        modelGenerator.register(ModItems.FLIPPERS, Models.GENERATED); // Will have a player model in the future.
     }
 
 }

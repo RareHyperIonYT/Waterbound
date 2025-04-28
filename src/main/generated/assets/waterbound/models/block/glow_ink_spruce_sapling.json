@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "waterbound:block/glow_ink_spruce_sapling"
-  }
-}

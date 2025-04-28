@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "waterbound:block/glow_ink_spruce_sapling"
-  }
-}
