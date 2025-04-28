@@ -14,6 +14,9 @@
 	"icon": "assets/waterbound/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"me.rarehyperion.core.datagen.WaterboundDataGenerator"
+		],
 		"main": ["me.rarehyperion.Waterbound"],
 		"client": ["me.rarehyperion.WaterboundClient"]
 	},
