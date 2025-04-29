@@ -12,6 +12,12 @@ public class WaterboundClient implements ClientModInitializer {
         final BlockRenderLayerMap layerMap = BlockRenderLayerMap.INSTANCE;
         layerMap.putBlock(ModBlocks.GLOW_INK_OAK_SAPLING, RenderLayer.getCutout());
         layerMap.putBlock(ModBlocks.GLOW_INK_SPRUCE_SAPLING, RenderLayer.getCutout());
+        layerMap.putBlock(ModBlocks.GLOW_INK_CHERRY_SAPLING, RenderLayer.getCutout());
+        layerMap.putBlock(ModBlocks.GLOW_INK_DARK_OAK_SAPLING, RenderLayer.getCutout());
+        layerMap.putBlock(ModBlocks.GLOW_INK_ACACIA_SAPLING, RenderLayer.getCutout());
+        layerMap.putBlock(ModBlocks.GLOW_INK_BIRCH_SAPLING, RenderLayer.getCutout());
+        layerMap.putBlock(ModBlocks.GLOW_INK_JUNGLE_SAPLING, RenderLayer.getCutout());
+        layerMap.putBlock(ModBlocks.GLOW_INK_PALE_OAK_SAPLING, RenderLayer.getCutout());
     }
 
 }

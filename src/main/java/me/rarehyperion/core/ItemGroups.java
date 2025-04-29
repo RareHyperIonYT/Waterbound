@@ -19,6 +19,12 @@ public class ItemGroups {
                 entries.add(ModItems.FLIPPERS);
                 entries.add(ModItems.GLOW_INK_OAK_SAPLING);
                 entries.add(ModItems.GLOW_INK_SPRUCE_SAPLING);
+                entries.add(ModItems.GLOW_INK_CHERRY_SAPLING);
+                entries.add(ModItems.GLOW_INK_DARK_OAK_SAPLING);
+                entries.add(ModItems.GLOW_INK_ACACIA_SAPLING);
+                entries.add(ModItems.GLOW_INK_BIRCH_SAPLING);
+                entries.add(ModItems.GLOW_INK_JUNGLE_SAPLING);
+                entries.add(ModItems.GLOW_INK_PALE_OAK_SAPLING);
             }).build();
 
     public static void initialize() {
