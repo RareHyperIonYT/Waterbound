@@ -80,11 +80,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 this.createShaped(RecipeCategory.MISC, ModItems.FLIPPERS)
                         .pattern("SLS")
                         .pattern("THT")
-                        .input('S', Items.SLIME_BALL)
+                        .input('S', Items.FEATHER)
                         .input('L', Items.LEATHER_BOOTS)
                         .input('T', Items.STRING)
                         .input('H', Items.LEATHER)
-                        .criterion(hasItem(Items.GLOW_INK_SAC), conditionsFromItem(Items.GLOW_INK_SAC))
+                        .criterion(hasItem(Items.FEATHER), conditionsFromItem(Items.FEATHER))
                         .offerTo(this.exporter);
 
             }
